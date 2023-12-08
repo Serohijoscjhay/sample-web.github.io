@@ -1,0 +1,64 @@
+body {
+    background-image:url(Skins/ultra-detailed-nebula-abstract-wallpaper-4.jpg) ;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*list styles*/
+
+li.search {
+    position: absolute;
+    left: 90%;
+    top: 2.600%;
+    
+}
+
+li.about {
+    position: absolute;
+    left: 81.999%;
+    top: 2.399%;
+    font-size: 3rem;
+}
+
+li.resources {
+    position: absolute;
+    left: 68.300%;
+    top: 2.399%;
+    font-size: 3rem;
+}
+
+li.home {
+    position: absolute;
+    left: 60.300%;
+    top: 2.399%;
+    font-size: 3rem;
+}
+
+input {
+    border-radius: 25px;
+    height: 50px;
+}
+
+.circle {
+    width: 100px; /* Set the width of the circle */
+    height: 100px; /* Set the height of the circle */
+    background-color: #00000000; /* Set the background color */
+    border-radius: 50%; /* Make it a circle with 50% border-radius */
+    box-sizing: border-box;
+    box-shadow: 3%;
+  }
+
+ .logo {
+    width: 80px;
+    position: absolute;
+    left: 17.500px;
+    top: 14px;
+ }
+
+ 
