@@ -8,6 +8,9 @@ ul {
 
 a {
     text-decoration: none;
+    color: whitesmoke;
+    transition: color 0.8s ease;
+    font-weight: bold;
 }
 
 /*list styles*/
@@ -27,9 +30,9 @@ li.about {
     font-size: 48px;
 }
 
-.about:hover {
-    text-decoration: bisque;
-    text-decoration: underline;
+a.about:hover {
+    color: aqua;
+   
 }
 
 li.resources {
@@ -39,11 +42,21 @@ li.resources {
     font-size: 48px;
 }
 
+a.resources:hover {
+    color: aqua;
+   
+}
+
 li.home {
     position: absolute;
-    left: 59.200%;
+    left: 59.095%;
     top: 2.399%;
     font-size: 48px;
+}
+
+a.home:hover {
+    color: aqua;
+   
 }
 
 input {
@@ -68,4 +81,13 @@ input {
     top: 43px;
 }
 
- 
+.jumping-text span {
+    display: inline-block;
+    font-size: 24px;
+    transition: transform 0.3s ease-out; /* Transition for transform property, 0.3s duration, ease-out timing function */
+  }
+
+  /* Add the jump effect on hover */
+  .jumping-text span:hover {
+    transform: translateY(-10px); /* Adjust the value to control the jump height */
+  }
