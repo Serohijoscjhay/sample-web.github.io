@@ -81,41 +81,101 @@ input {
     top: 43px;
 }
 
-.middle{
+.middle {
     overflow: hidden;
-  
 }
 
 .logo-middle {
-    left: 44.300%;
-    top: 36%;
     position: absolute;
-    transition: transform .5s ease-out;
-    overflow: hidden;
+    left: 44%;
+    top: 40%;
+    cursor: pointer;
+    transition: transform 0.5s ease;
 }
-
-
 
 .listed-button {
     position: absolute;
-    left: 58%;
-    top: 40%;
-    display: none
+    left: 28.600%;
+    top: 33.299%;
+    opacity: 0;
+    z-index: -1;
+}
+
+.listed-button.visible {
+    opacity: 1;
+    animation: width .5s ease;
+    background-image: url(Skins/tdf6icwtxuh11.png);
+    height: 36.700%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 1%;
+    background-clip: inherit;
+    border-radius: 0 30px 30px 0;
     
 }
 
 
+a.Sign-in {
+    position: absolute;
+    left: 55%;
+    top: 49%;
+    z-index: 1;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    color: #3498db;
+    background-color: white;
+    padding: 10px 20px;
+}
 
-.middle:hover .listed-button {
-    font-style: italic;
-    display: block;
+a.Sign-in:hover {
+    background-color: #3498db;
+    color: white;
     
 }
 
 
-
-.middle:hover .logo-middle {
-    transform: translateX(-190%) rotate(45deg) ;
-    overflow: hidden; 
+a.Login {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    z-index: 1;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    color: #3498db;
+    background-color: white;
+    padding: 10px 20px;
+    
 }
 
+a.Login:hover {
+    background-color: #3498db;
+      color: white;
+}
+
+@keyframes width {
+    0% {
+        width: 0px;
+        left: 49.300%;
+    }
+
+    9% {
+        width: 500px;
+        
+    }
+
+   
+}
+
+.logo-middle:hover {
+    transform: rotate(45deg);
+}
+
+.logo-middle.clicked {
+    transform: rotate(45deg) translateX(-300px) translateY(300px);
+
+}
