@@ -81,13 +81,41 @@ input {
     top: 43px;
 }
 
-.jumping-text span {
-    display: inline-block;
-    font-size: 24px;
-    transition: transform 0.3s ease-out; /* Transition for transform property, 0.3s duration, ease-out timing function */
-  }
+.middle{
+    overflow: hidden;
+  
+}
 
-  /* Add the jump effect on hover */
-  .jumping-text span:hover {
-    transform: translateY(-10px); /* Adjust the value to control the jump height */
-  }
+.logo-middle {
+    left: 44.300%;
+    top: 36%;
+    position: absolute;
+    transition: transform .5s ease-out;
+    overflow: hidden;
+}
+
+
+
+.listed-button {
+    position: absolute;
+    left: 58%;
+    top: 40%;
+    display: none
+    
+}
+
+
+
+.middle:hover .listed-button {
+    font-style: italic;
+    display: block;
+    
+}
+
+
+
+.middle:hover .logo-middle {
+    transform: translateX(-190%) rotate(45deg) ;
+    overflow: hidden; 
+}
+
